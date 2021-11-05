@@ -3,32 +3,33 @@
     {
       "id": 1,
       "name": "Chanel",
-      "iconic_sayings": "iconic saying blha blha blha",
-      "who_wore_it_best": "insert info",
-      "images":[ 
+      "founder": "Coco Chanel, 1910 - Paris France",
+      "main_image": "./images/chanel-tweed-jacket-main.jpeg",
+      "iconic_sayings": "Beauty begins the moment you decide to be yourself. - Coco Chanel",
+      "extra_images": [
         "./images/chanel/the-chanel-boy-bag.jpg",
-        "./images/chanel/chanel-breton-top.jpeg"
+        "./images/chanel/chanel-breton-top.jpeg",
+        "./images/chanel/faux-pearls.jpg",
+        "./images/chanel/audrey-in-the-little-black-dress.jpeg",
+        "./images/chanel/marilyn-monroe-chanel-no-5.jpg",
+        "./images/chanel/coco-chanel-working-paris.jpeg"
       ]
-      
     },
     {
       "id": 2,
       "name": "Louis Vuitton",
-      "iconic_sayings": "blha blha blha",
-      "who_wore_it_best": "actress/celeb/icon",
-      "images":[
-      "./images/louis-vuitton/lv-luggage.jpeg"
-      ]
-       
+      "founder": "Louis Vuitton Malletier, 1854 - Paris France",
+      "main_image": "./images/louis-vuitton/lv--old-school-trunk.jpeg",
+      "iconic_sayings": "'-L.V the Truth-'. Although Louis Vuitton was not known for a hard slogan or tagline, it was meant as more of an abstract slogan, depending on the consumers outlook. The interpretation of “L.V” as “Live” and “Love” reminds consumers to live their lives to the fullest and pursue their passion in life. By combining the phrase 'the Truth' with “L.V”, “Live the Truth” or “Love the Truth” can refer to consumers being true and confident in expressing their personal fashion style, brand or lifestyle choices.",
+      "extra_images": ["./images/louis-vuitton/lv-luggage.jpeg"]
     },
     {
       "id": 3,
       "name": "Versace",
+      "founder": "Gianni Versace, Donnatella Versace, 1989 - Milan Italy",
+      "main_image": "",
       "iconic_sayings": "iconic saying",
-      "who_wore_it_best": "insert info",
-      "images": ["insert multipleimages in here"]
-
-
+      "extra_images": ["insert images"]
     }
   ]
 }
