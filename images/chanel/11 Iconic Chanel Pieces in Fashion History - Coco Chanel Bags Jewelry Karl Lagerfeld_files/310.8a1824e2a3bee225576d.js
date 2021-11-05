@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[310],{310:function(e,n,t){t.r(n),t.d(n,{default:function(){return a}});var c=t(6357),s=t(2087);function a(e){var n=e.content;return(0,s.jsx)("div",{className:"space--both-5",children:(0,s.jsx)("div",{className:"highlight",children:(0,s.jsx)("div",{className:"formatted-content",children:(0,c.ZP)(n)})})})}}}]);
