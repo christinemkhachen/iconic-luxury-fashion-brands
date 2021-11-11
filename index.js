@@ -97,11 +97,11 @@ let brandsInfo = [];
 // }
 const displayBrand = (brand) => {
   const div = document.createElement("div"); //creating a div (brand 1 for example) this also an example html tag..
-  const brandDetails = document.createElement("div");
+  //const brandDetails = document.createElement("div");
 
   // line above created  <div></div>
   //everytime i see document juust think JS is trying to communicate with the HTML* document so Js is just like "hey HTML*, make this tag for me" so the parameter you give it determines which kind of tag you create
-  brandDetails.className = "brandDetails";
+  //brandDetails.className = "brandDetails";
   div.id = `brand-${brand.id}`; //we are setting an id attribute in this case with div.id (hence the id part) and giving it a value of the brand object's id so either brand-1, brand-2 brand-3 etc in this app
   console.log(div.id);
   //<div id="brand-1"> </div> it wil change dpending on the brand id number and .forEach method will iterate through our brands and change the brand id number ("brand-2" would be louis vuitton *dont forget the "" bc its a string) for each iteration
@@ -152,7 +152,8 @@ const displayBrand = (brand) => {
   likes.addEventListener("click", () => {
     likes.innerHTML = '<i class="fas fa-heart"></i>';
   });
-  div.append(likes, h3, img, h4, likes, brandDetails);
+  h3.append(likes);
+  div.append(h3, img, h4, likes);
   //appending basically means put the tags in parenthesis inside of the tag on the left in this example div
   // <div id="brand-1" class="brand-card-front">
   //<h3>*brand's name goes here*</h3>
