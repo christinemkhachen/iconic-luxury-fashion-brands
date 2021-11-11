@@ -4,8 +4,8 @@
 }
 
 .brand-card-front {
-  height: 26em;
-  width: 26em;
+  height: 32em;
+  width: 50%;
 }
 
 .brand-card-front img {
@@ -14,4 +14,19 @@
 }
 .animate {
   transform: rotate(180deg);
+}
+
+.brandDetails {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.brandDetails img {
+  height: 150px;
+}
+
+#brands {
+  display: flex;
+  flex-wrap: wrap;
 }

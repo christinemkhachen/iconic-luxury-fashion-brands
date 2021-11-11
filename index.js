@@ -97,8 +97,11 @@ let brandsInfo = [];
 // }
 const displayBrand = (brand) => {
   const div = document.createElement("div"); //creating a div (brand 1 for example) this also an example html tag..
+  const brandDetails = document.createElement("div");
+
   // line above created  <div></div>
   //everytime i see document juust think JS is trying to communicate with the HTML* document so Js is just like "hey HTML*, make this tag for me" so the parameter you give it determines which kind of tag you create
+  brandDetails.className = "brandDetails";
   div.id = `brand-${brand.id}`; //we are setting an id attribute in this case with div.id (hence the id part) and giving it a value of the brand object's id so either brand-1, brand-2 brand-3 etc in this app
   console.log(div.id);
   //<div id="brand-1"> </div> it wil change dpending on the brand id number and .forEach method will iterate through our brands and change the brand id number ("brand-2" would be louis vuitton *dont forget the "" bc its a string) for each iteration
@@ -117,9 +120,10 @@ const displayBrand = (brand) => {
   a.href = "#";
   // an anchor tag will listen to a click event
   a.addEventListener("click", handleClick);
+  //this is invoking a handleclick funtion
   h3.appendChild(a);
   const iconicHover = document.createElement("div");
-  //we are using brand becaue it is the object and aconic_hover decause it is a key value (DB.jason)
+  //we are using brand becaue it is the object and aconic_hover decause it is a key value (DB.jason), this is called invoking a function*******
 
   img.addEventListener("mouseover", (event) => {
     img.classList.add("animate");
@@ -148,7 +152,7 @@ const displayBrand = (brand) => {
   likes.addEventListener("click", () => {
     likes.innerHTML = '<i class="fas fa-heart"></i>';
   });
-  div.append(h3, img, h4, likes);
+  div.append(likes, h3, img, h4, likes, brandDetails);
   //appending basically means put the tags in parenthesis inside of the tag on the left in this example div
   // <div id="brand-1" class="brand-card-front">
   //<h3>*brand's name goes here*</h3>
@@ -161,6 +165,8 @@ const displayBrand = (brand) => {
 const handleClick = (event) => {
   const logo = event.target.textContent;
   const brand = brandsInfo.find((brandObj) => brandObj.name === logo);
+  const brandDetails = document.querySelector(".brandDetails");
+  console.log(brandDetails);
   brandDetails.innerHTML = "";
   brand.extra_images.forEach((ImageUrl) => {
     const img = document.createElement("img");
