@@ -2,3 +2,16 @@
   background-color: grey;
   border: midnightblue;
 }
+
+.brand-card-front {
+  height: 26em;
+  width: 26em;
+}
+
+.brand-card-front img {
+  height: 20em;
+  width: 20em;
+}
+.animate {
+  transform: rotate(180deg);
+}

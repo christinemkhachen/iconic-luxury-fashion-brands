@@ -4,7 +4,8 @@
       "id": 1,
       "name": "Chanel",
       "founder": "Coco Chanel, 1910 - Paris, France",
-      "main_image": "./images/chanel-tweed-jacket-main.jpeg",
+      "main_image": "./images/chanel/chanel-tweed-jacket-main.jpeg",
+      "iconic_hover": "I dont do fashion, i AM fashion - Coco Chanel",
       "iconic_sayings": "Beauty begins the moment you decide to be yourself. - Coco Chanel",
       "extra_images": [
         "./images/chanel/the-chanel-boy-bag.jpg",
@@ -18,15 +19,31 @@
     {
       "id": 2,
       "name": "Louis Vuitton",
-      "founder": "Louis Vuitton Malletier, 1854 - Paris France",
-      "main_image": "./images/louis-vuitton/lv--old-school-trunk.jpeg",
-      "iconic_sayings": "'-L.V the Truth-'. Although Louis Vuitton was not known for a hard slogan or tagline, it was meant as more of an abstract slogan, depending on the consumers outlook. The interpretation of “L.V” as “Live” and “Love” reminds consumers to live their lives to the fullest and pursue their passion in life. By combining the phrase 'the Truth' with “L.V”, “Live the Truth” or “Love the Truth” can refer to consumers being true and confident in expressing their personal fashion style, brand or lifestyle choices.",
+      "founder": "Louis Vuitton Malletier, 1854 - Paris, France",
+      "iconic_hover": "'-L.V the Truth-'",
+      "main_image": "./images/louis-vuitton/lv-old-school-trunk.jpeg",
+      "iconic_sayings": "Louis Vuitton was not known for a slogan. By combining the phrase 'the Truth' with “L.V”, “Live the Truth” or “Love the Truth” refers to someone being true and confident in expressing personal fashion style, brand or lifestyle choices.",
       "extra_images": ["./images/louis-vuitton/lv-luggage.jpeg"]
     },
     {
       "id": 3,
+      "name": "Levi Strauss & Co",
+      "founder": "Levi Strauss, 1853 - San Francisco, California, U.S",
+      "iconic_hover": "Have you ever had a bad time in Levi’s?",
+      "main_image": "./images/levis-jeans/historyBanner",
+      "iconic_sayings": "Our models can beat up their models.",
+      "extra_images": [
+        "./images/levis-jeans/vintage-orange-tab-fall-american-look-jeans.jpeg",
+        "./images/levis-jeans/xxjacket.jpeg",
+        "/images/levis-jeans/motown.jpeg"
+      ]
+    },
+
+    {
+      "id": 4,
       "name": "Versace",
       "founder": "Gianni Versace, Donnatella Versace, 1989 - Milan Italy",
+      "iconic_hover": "",
       "main_image": "",
       "iconic_sayings": "iconic saying",
       "extra_images": ["insert images"]
