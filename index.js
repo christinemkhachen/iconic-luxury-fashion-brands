@@ -102,6 +102,8 @@ const displayBrand = (brand) => {
   // line above created  <div></div>
   //everytime i see document juust think JS is trying to communicate with the HTML* document so Js is just like "hey HTML*, make this tag for me" so the parameter you give it determines which kind of tag you create
   //brandDetails.className = "brandDetails";
+  const extraImagesDiv = document.createElement("div");
+  extraImagesDiv.id = `extra-${brand.name}-images`;
   div.id = `brand-${brand.id}`; //we are setting an id attribute in this case with div.id (hence the id part) and giving it a value of the brand object's id so either brand-1, brand-2 brand-3 etc in this app
   console.log(div.id);
   //<div id="brand-1"> </div> it wil change dpending on the brand id number and .forEach method will iterate through our brands and change the brand id number ("brand-2" would be louis vuitton *dont forget the "" bc its a string) for each iteration
@@ -153,7 +155,7 @@ const displayBrand = (brand) => {
     likes.innerHTML = '<i class="fas fa-heart"></i>';
   });
   h3.append(likes);
-  div.append(h3, img, h4, likes);
+  div.append(h3, img, h4, likes, extraImagesDiv);
   //appending basically means put the tags in parenthesis inside of the tag on the left in this example div
   // <div id="brand-1" class="brand-card-front">
   //<h3>*brand's name goes here*</h3>
@@ -166,8 +168,8 @@ const displayBrand = (brand) => {
 const handleClick = (event) => {
   const logo = event.target.textContent;
   const brand = brandsInfo.find((brandObj) => brandObj.name === logo);
-  const brandDetails = document.querySelector(".brandDetails");
-  console.log(brandDetails);
+  const brandDetails = document.querySelector(`#extra-${brand.name}-images`);
+
   brandDetails.innerHTML = "";
   brand.extra_images.forEach((ImageUrl) => {
     const img = document.createElement("img");
@@ -212,7 +214,7 @@ document.addEventListener("DOMContentLoaded", handlePageLoaded);
 // <div class="section" id="title">
 //function expression syntax is line below
 //__________________________________________________________________________________________________________
-// bELOW IS A FAILED ATTEMPT AT A CONDITIONAL RENDER (ciaras)
+// bELOW IS A FAILED ATTEMPT AT A CONDITIONAL RENDER (christines)
 //IN ORDER TO USE THIS CODE THIS LNE FROM THE HTML DOC MUST BE COMMENTED OUT
 // <div class="section" id="brandDetails"></div>
 //const brandsDiv = () => document.querySelector("#brands"); //diff betweeen . and # is . refers to a class and
