@@ -103,7 +103,7 @@ const displayBrand = (brand) => {
   //everytime i see document juust think JS is trying to communicate with the HTML* document so Js is just like "hey HTML*, make this tag for me" so the parameter you give it determines which kind of tag you create
   //brandDetails.className = "brandDetails";
   const extraImagesDiv = document.createElement("div");
-  extraImagesDiv.id = `extra-${brand.name}-images`;
+  extraImagesDiv.id = `extra-${brand.name.replaceAll(" ", "-")}-images`;
   div.id = `brand-${brand.id}`; //we are setting an id attribute in this case with div.id (hence the id part) and giving it a value of the brand object's id so either brand-1, brand-2 brand-3 etc in this app
   console.log(div.id);
   //<div id="brand-1"> </div> it wil change dpending on the brand id number and .forEach method will iterate through our brands and change the brand id number ("brand-2" would be louis vuitton *dont forget the "" bc its a string) for each iteration
@@ -129,7 +129,7 @@ const displayBrand = (brand) => {
 
   img.addEventListener("mouseover", (event) => {
     img.classList.add("animate");
-    iconicHover.textContent = `Founder: ${brand.founder}
+    iconicHover.textContent = ` info blah blah interpolate
     Iconic Saying: ${brand.iconic_sayings}
     Iconic Saying: ${brand.iconic_hover}
     `;
@@ -168,7 +168,9 @@ const displayBrand = (brand) => {
 const handleClick = (event) => {
   const logo = event.target.textContent;
   const brand = brandsInfo.find((brandObj) => brandObj.name === logo);
-  const brandDetails = document.querySelector(`#extra-${brand.name}-images`);
+  const brandDetails = document.querySelector(
+    `#extra-${brand.name.replaceAll(" ", "-")}-images`
+  );
 
   brandDetails.innerHTML = "";
   brand.extra_images.forEach((ImageUrl) => {

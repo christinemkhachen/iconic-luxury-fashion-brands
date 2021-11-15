@@ -23,18 +23,23 @@
       "iconic_hover": "'-L.V the Truth-'",
       "main_image": "./images/louis-vuitton/old-school-lv-steamer-trunk.jpeg",
       "iconic_sayings": "Louis Vuitton was not known for a slogan. By combining the phrase 'the Truth' with “L.V”, “Live the Truth” or “Love the Truth” refers to someone being true and confident in expressing personal fashion style, brand or lifestyle choices.",
-      "extra_images": ["./images/louis-vuitton/lv-luggage.jpeg"]
+      "extra_images": [
+        "./images/louis-vuitton/lv-luggage.jpeg",
+        "./images/louis-vuitton/stacked-lv-trunks.jpeg"
+      ]
     },
     {
       "id": 3,
-      "name": "Levi Strauss & Co",
+      "name": "Levi Strauss",
       "founder": "Levi Strauss, 1853 - San Francisco, California, U.S",
       "iconic_hover": "Have you ever had a bad time in Levi’s?",
-      "main_image": "./images/levis-jeanslevis-the-shocking-truth.jpeg",
+      "main_image": "./images/levis-jeans/levis-the-shocking-truth.jpeg",
       "iconic_sayings": "Our models can beat up their models.",
       "extra_images": [
-        "./images/levis-jeans/levi-main-image.jpeg",
-        "./images/levis-jeans/women-welders.jpeg"
+        "./images/levis-jeans/levis-main-image.jpeg",
+        "./images/levis-jeans/levis-women-welders.jpeg",
+        "./images/levis-jeans/levis-cowgirl.jpeg",
+        "./images/levis-jeans/levis-2018-vintage.jpeg"
       ]
     },
 
@@ -50,7 +55,8 @@
         "./images/versace/versace-biggie.jpeg",
         "./images/versace/versace-cindy.jpeg",
         "./images/versace/versace-hurley.jpeg",
-        "./images/versace/versace-jlo-thenvsnow.jpeg"
+        "./images/versace/versace-jlo-thenvsnow.jpeg",
+        "./images/versace/versace-logolook.jpeg"
       ]
     }
   ]
