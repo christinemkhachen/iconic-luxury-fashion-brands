@@ -24,9 +24,9 @@ const displayBrand = (brand) => {
 
   img.addEventListener("mouseenter", (event) => {
     img.classList.add("animate");
-    iconicHover.textContent = ` info blah blah interpolate
-    Iconic Saying: ${brand.iconic_sayings}
-    Iconic Saying: ${brand.iconic_hover}
+    iconicHover.textContent = ` 
+     ${brand.iconic_sayings}
+     ${brand.iconic_hover}
     `;
     img.replaceWith(iconicHover);
   });
