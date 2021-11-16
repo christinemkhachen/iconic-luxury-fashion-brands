@@ -129,9 +129,9 @@ const displayBrand = (brand) => {
 
   img.addEventListener("mouseover", (event) => {
     img.classList.add("animate");
-    iconicHover.textContent = ` info blah blah interpolate
-    Iconic Saying: ${brand.iconic_sayings}
-    Iconic Saying: ${brand.iconic_hover}
+    iconicHover.textContent = ` 
+     ${brand.iconic_sayings}
+     ${brand.iconic_hover}
     `;
     // the entire point of 31-33 - 31 hieds the icnoic hover when youre not hovering over, 32 means yes dispkay the icnoc hover quote when the mouse is hovering over and
     // 33 displays it as a block of text${/elements

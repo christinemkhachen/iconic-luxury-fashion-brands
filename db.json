@@ -6,7 +6,7 @@
       "founder": "Coco Chanel, 1910 - Paris, France",
       "main_image": "./images/chanel/chanel-tweed-jacket-main.jpeg",
       "iconic_hover": "I dont do fashion, i AM fashion. - Coco Chanel",
-      "iconic_sayings": "Beauty begins the moment you decide to be yourself. - Coco Chanel",
+      "iconic_sayings": "If Coco wasn't such a rebel, costume jewellery would still be scoffed at. A huge faux pas. In fact, all the pearls she was famous for wearing, were not real. The global market for costume jewellery is currently valued at over 17 Billion USD.",
       "extra_images": [
         "./images/chanel/chanel-breton-top.jpeg",
         "./images/chanel/the-boy-bag.jpeg",
@@ -16,13 +16,14 @@
         "./images/chanel/naomi.jpeg"
       ]
     },
+    
     {
       "id": 2,
       "name": "Louis Vuitton",
       "founder": "Louis Vuitton Malletier, 1854 - Paris, France",
       "iconic_hover": "'-L.V the Truth-'",
       "main_image": "./images/louis-vuitton/old-school-lv-steamer-trunk.jpeg",
-      "iconic_sayings": "Louis Vuitton was not known for a slogan. By combining the phrase 'the Truth' with “L.V”, “Live the Truth” or “Love the Truth” refers to someone being true and confident in expressing personal fashion style, brand or lifestyle choices.",
+      "iconic_sayings": "Louis Vuitton was not known for a slogan per se. By combining the phrase 'the Truth' with “L.V”, “Live the Truth” or “Love the Truth” refers to someone being true and confident in expressing personal fashion style, brand or lifestyle choices.",
       "extra_images": [
         "./images/louis-vuitton/lv-old-school-trunk.jpeg",
         "./images/louis-vuitton/lv-luggage.jpeg",
@@ -36,9 +37,9 @@
       "id": 3,
       "name": "Levi Strauss",
       "founder": "Levi Strauss, 1853 - San Francisco, California, U.S",
-      "iconic_hover": "Have you ever had a bad time in Levi’s?",
+      "iconic_hover": "Good ol' Levi's. The essence and fore front of American fashion. This famous slogan says it all: Our models can beat up their models.",
       "main_image": "./images/levis-jeans/levis-the-shocking-truth.jpeg",
-      "iconic_sayings": "Our models can beat up their models.",
+      "iconic_sayings": "In 1934, Levis introduced the very first blue jeans for women. I mean...Have you ever had a bad time in Levi’s?",
       "extra_images": [
         "./images/levis-jeans/iconic-levis.jpeg",
         "./images/levis-jeans/levis-vintage-longjohn.jpeg",
@@ -53,9 +54,9 @@
       "id": 4,
       "name": "Versace",
       "founder": "Gianni Versace, Donatella Versace, 1989 - Milan Italy",
-      "iconic_hover": "Don't be into trends. Don't make fashion own you, but you decide what you are. - Gianna Versace",
+      "iconic_hover": "Gianni - Don't be into trends. Don't make fashion own you, but you decide what you are",
       "main_image": "./images/versace/versace-madonna-poodle.jpeg",
-      "iconic_sayings": "Why do women need men nowadays? Certainly not to prove strength, determination and independence anymore. Men are needed only for love affairs and for physical relaxation. - Donatella Versace",
+      "iconic_sayings": "Donatella - Why do women need men nowadays? Certainly not to prove strength, determination and independence anymore. Men are needed only for love affairs and for physical relaxation...",
       "extra_images": [
         "./images/versace/versace-gianni-dona.jpeg",
         "./images/versace/versace-biggie.jpeg",
