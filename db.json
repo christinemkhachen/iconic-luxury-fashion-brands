@@ -8,12 +8,12 @@
       "iconic_hover": "I dont do fashion, i AM fashion. - Coco Chanel",
       "iconic_sayings": "Beauty begins the moment you decide to be yourself. - Coco Chanel",
       "extra_images": [
-        "./images/chanel/the-chanel-boy-bag.jpg",
         "./images/chanel/chanel-breton-top.jpeg",
-        "./images/chanel/faux-pearls.jpg",
-        "./images/chanel/audrey-in-the-little-black-dress.jpeg",
-        "./images/chanel/marilyn-monroe-chanel-no-5.jpg",
-        "./images/chanel/coco-chanel-working-paris.jpeg"
+        "./images/chanel/the-boy-bag.jpeg",
+        "./images/chanel/parfume-no-5.jpeg",
+        "./images/chanel/the-leg.jpeg",
+        "./images/chanel/classic-tweed.jpeg",
+        "./images/chanel/naomi.jpeg"
       ]
     },
     {
@@ -24,8 +24,12 @@
       "main_image": "./images/louis-vuitton/old-school-lv-steamer-trunk.jpeg",
       "iconic_sayings": "Louis Vuitton was not known for a slogan. By combining the phrase 'the Truth' with “L.V”, “Live the Truth” or “Love the Truth” refers to someone being true and confident in expressing personal fashion style, brand or lifestyle choices.",
       "extra_images": [
+        "./images/louis-vuitton/lv-old-school-trunk.jpeg",
         "./images/louis-vuitton/lv-luggage.jpeg",
-        "./images/louis-vuitton/stacked-lv-trunks.jpeg"
+        "./images/louis-vuitton/lvoutfit.jpeg",
+        "./images/louis-vuitton/mens.webp",
+        "./images/louis-vuitton/eyewear.jpeg",
+        "./images/louis-vuitton/vintage.jpeg"
       ]
     },
     {
@@ -36,9 +40,11 @@
       "main_image": "./images/levis-jeans/levis-the-shocking-truth.jpeg",
       "iconic_sayings": "Our models can beat up their models.",
       "extra_images": [
-        "./images/levis-jeans/levis-main-image.jpeg",
+        "./images/levis-jeans/iconic-levis.jpeg",
+        "./images/levis-jeans/levis-vintage-longjohn.jpeg",
         "./images/levis-jeans/levis-women-welders.jpeg",
         "./images/levis-jeans/levis-cowgirl.jpeg",
+        "./images/levis-jeans/james-dean.jpeg",
         "./images/levis-jeans/levis-2018-vintage.jpeg"
       ]
     },
