@@ -365,3 +365,8 @@ document.addEventListener("DOMContentLoaded", handlePageLoaded);
 //   let hidden = document.getElementById(`brand-${hiddenBrand.id}`);
 //   hidden.style.display = "none";
 // }
+ //background images for css main page
+ //https://i.pinimg.com/474x/d8/f2/88/d8f2882a05a898cef0bf330810897fc0.jpg
+//"https://media.istockphoto.com/vectors/spotlights-background-glowing-stage-light-beams-vector-id1290038988?k=20&m=1290038988&s=612x612&w=0&h=mc5jC94FSekDdOhAhHUTJZOu2fqTEjeWs3xy_J7hXQU="
+//https://i.etsystatic.com/11263773/r/il/2ed0ba/1987417405/il_1588xN.1987417405_7127.jpg
+//https://runwaydivaboutique.com/wp-content/uploads/2015/04/fashion-runway-models-clipart-with-runway-model-silhouette-o-fashion-runway-facebook.jpg
