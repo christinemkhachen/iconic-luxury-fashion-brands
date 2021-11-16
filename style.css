@@ -1,4 +1,4 @@
-.section {
+/* .section {
   background-color: "";
   border: "";
 }
@@ -42,4 +42,82 @@ body::before {
 #brands {
   display: flex;
   flex-wrap: wrap;
+} */
+
+
+
+
+
+/* MATTEOS */
+
+.section {
+  background-color: grey;
+  border: midnightblue;
+  text-align: center;
 }
+
+.brand-card-front {
+  height: auto;
+  width: 50%;
+}
+
+.brand-card-front h3 {
+  text-align: center;
+}
+
+.brand-card-front h4 {
+  text-align: center;
+}
+
+.brand-card-front h3.block-view, .brand-card-front h4.block-view {
+  text-align: center;
+}
+
+.brand-card-front img.block-view {
+  width: 30%;
+}
+
+div.extra-images img.extra-image {
+  width: 33%;
+}
+
+div.brand-card-front img {
+  height: 20em;
+  width: auto;
+  max-width: 70%;
+}
+.animate {
+  transform: rotate(180deg);
+}
+
+.brandDetails {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.extra-images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#brands {
+  display: flex;
+  flex-flow:  row wrap;
+  justify-content: flex-start;
+
+}
+
+.brand-card-front.block-view {
+  height: auto;
+  width: 100%;
+}
+
+#brands.block-view  {
+  width: 100%;
+  display: block;
+}
+
+
+

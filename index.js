@@ -104,22 +104,21 @@ const displayBrand = (brand) => {
   //brandDetails.className = "brandDetails";
   const extraImagesDiv = document.createElement("div");
   extraImagesDiv.id = `extra-${brand.name.replaceAll(" ", "-")}-images`;
+  extraImagesDiv.className = "extra-images";
   div.id = `brand-${brand.id}`; //we are setting an id attribute in this case with div.id (hence the id part) and giving it a value of the brand object's id so either brand-1, brand-2 brand-3 etc in this app
-  console.log(div.id);
   //<div id="brand-1"> </div> it wil change dpending on the brand id number and .forEach method will iterate through our brands and change the brand id number ("brand-2" would be louis vuitton *dont forget the "" bc its a string) for each iteration
   div.className = "brand-card-front";
   //<div id="brand-1" class="brand-card-front">  </div>
   const img = document.createElement("img"); //using javascript to create an html tag *the html tag HAS TO BE VALID u cant just use a conveient name*
   //<img>
   img.src = brand.main_image;
-  console.log(img.src);
   //<img src=""> we will rely on dot notation to dynamically pull in the relative path associated with that brand object's main image key
   const h3 = document.createElement("h3"); //using javascript to create an html tag
   //<h3></h3>
   const a = document.createElement("a");
   a.textContent = brand.name;
   //<h3>*brand's name goes here*</h3> we will rely on dot notation to grab the brand's name from our brand object
-  a.href = "#";
+  a.href = `#${brand.name.replaceAll(" ", "-").toLowerCase()}`;
   // an anchor tag will listen to a click event
   a.addEventListener("click", handleClick);
   //this is invoking a handleclick funtion
@@ -154,7 +153,6 @@ const displayBrand = (brand) => {
   likes.addEventListener("click", () => {
     likes.innerHTML = '<i class="fas fa-heart"></i>';
   });
-  h3.append(likes);
   div.append(h3, img, h4, likes, extraImagesDiv);
   //appending basically means put the tags in parenthesis inside of the tag on the left in this example div
   // <div id="brand-1" class="brand-card-front">
@@ -171,13 +169,31 @@ const handleClick = (event) => {
   const brandDetails = document.querySelector(
     `#extra-${brand.name.replaceAll(" ", "-")}-images`
   );
+  const brandCardFront = document.querySelector(
+    `#${brand.name.replaceAll(" ", "-").toLowerCase()}`
+  );
 
-  brandDetails.innerHTML = "";
-  brand.extra_images.forEach((ImageUrl) => {
-    const img = document.createElement("img");
-    img.src = ImageUrl;
-    brandDetails.appendChild(img);
-  });
+  if (brandDetails.innerHTML === "") {
+    if (!brandCardFront.classList.contains("block-view")) {
+      document
+        .querySelectorAll(".brand-card-front")
+        .forEach((div) => div.classList.toggle("block-view"));
+    }
+    document
+      .querySelectorAll(".extra-images")
+      .forEach((div) => (div.innerHTML = ""));
+    brand.extra_images.forEach((ImageUrl) => {
+      const img = document.createElement("img");
+      img.src = ImageUrl;
+      img.className = "extra-image";
+      brandDetails.appendChild(img);
+    });
+  } else {
+    brandDetails.innerHTML = "";
+    document
+      .querySelectorAll(".brand-card-front")
+      .forEach((div) => div.classList.remove("block-view"));
+  }
 };
 const fetchBrands = () => {
   fetch("http://localhost:8000/brands") //grabs all data from db.json
@@ -370,3 +386,12 @@ document.addEventListener("DOMContentLoaded", handlePageLoaded);
 //"https://media.istockphoto.com/vectors/spotlights-background-glowing-stage-light-beams-vector-id1290038988?k=20&m=1290038988&s=612x612&w=0&h=mc5jC94FSekDdOhAhHUTJZOu2fqTEjeWs3xy_J7hXQU="
 //https://i.etsystatic.com/11263773/r/il/2ed0ba/1987417405/il_1588xN.1987417405_7127.jpg
 //https://runwaydivaboutique.com/wp-content/uploads/2015/04/fashion-runway-models-clipart-with-runway-model-silhouette-o-fashion-runway-facebook.jpg
+
+// brandDetails.innerHTML = "";
+// brand.extra_images.forEach((ImageUrl) => {
+//   const img = document.createElement("img");
+//   img.src = ImageUrl;
+//   brandDetails.appendChild(img);
+// });
+
+//removed and replaced
