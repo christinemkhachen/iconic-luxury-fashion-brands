@@ -127,7 +127,7 @@ const displayBrand = (brand) => {
   const iconicHover = document.createElement("div");
   //we are using brand becaue it is the object and aconic_hover decause it is a key value (DB.jason), this is called invoking a function*******
 
-  img.addEventListener("mouseover", (event) => {
+  img.addEventListener("mouseenter", (event) => {
     img.classList.add("animate");
     iconicHover.textContent = ` 
      ${brand.iconic_sayings}
@@ -137,7 +137,7 @@ const displayBrand = (brand) => {
     // 33 displays it as a block of text${/elements
     img.replaceWith(iconicHover);
   });
-  img.addEventListener("mouseleave", () => {
+  iconicHover.addEventListener("mouseleave", () => {
     img.classList.remove("animate");
     iconicHover.replaceWith(img);
     // this closes the mouse over function so the quote doesnt stay displayed
@@ -365,8 +365,8 @@ document.addEventListener("DOMContentLoaded", handlePageLoaded);
 //   let hidden = document.getElementById(`brand-${hiddenBrand.id}`);
 //   hidden.style.display = "none";
 // }
- //background images for css main page
- //https://i.pinimg.com/474x/d8/f2/88/d8f2882a05a898cef0bf330810897fc0.jpg
+//background images for css main page
+//https://i.pinimg.com/474x/d8/f2/88/d8f2882a05a898cef0bf330810897fc0.jpg
 //"https://media.istockphoto.com/vectors/spotlights-background-glowing-stage-light-beams-vector-id1290038988?k=20&m=1290038988&s=612x612&w=0&h=mc5jC94FSekDdOhAhHUTJZOu2fqTEjeWs3xy_J7hXQU="
 //https://i.etsystatic.com/11263773/r/il/2ed0ba/1987417405/il_1588xN.1987417405_7127.jpg
 //https://runwaydivaboutique.com/wp-content/uploads/2015/04/fashion-runway-models-clipart-with-runway-model-silhouette-o-fashion-runway-facebook.jpg
