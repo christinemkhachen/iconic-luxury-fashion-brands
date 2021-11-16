@@ -44,16 +44,18 @@ body::before {
   flex-wrap: wrap;
 } */
 
-
-
-
-
 /* MATTEOS */
 
 .section {
-  background-color: grey;
+  /* background-color: grey; */
   border: midnightblue;
   text-align: center;
+}
+body {
+  background-image: url(https://img.freepik.com/free-vector/realistic-fashion-runway-illustration_23-2148812992.jpg?size=626&ext=jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .brand-card-front {
@@ -69,7 +71,8 @@ body::before {
   text-align: center;
 }
 
-.brand-card-front h3.block-view, .brand-card-front h4.block-view {
+.brand-card-front h3.block-view,
+.brand-card-front h4.block-view {
   text-align: center;
 }
 
@@ -104,9 +107,9 @@ div.brand-card-front img {
 
 #brands {
   display: flex;
-  flex-flow:  row wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
-
+  font-size: 15px;
 }
 
 .brand-card-front.block-view {
@@ -114,10 +117,11 @@ div.brand-card-front img {
   width: 100%;
 }
 
-#brands.block-view  {
+#brands.block-view {
   width: 100%;
   display: block;
 }
 
-
-
+* {
+  font-family: "Franklin Gothic Medium", sans-serif;
+}
