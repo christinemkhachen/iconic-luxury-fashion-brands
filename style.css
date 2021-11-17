@@ -48,7 +48,7 @@ body::before {
 
 .section {
   /* background-color: grey; */
-  border: midnightblue;
+  border: black;
   text-align: center;
 }
 body {
@@ -109,7 +109,8 @@ div.brand-card-front img {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .brand-card-front.block-view {
@@ -123,5 +124,6 @@ div.brand-card-front img {
 }
 
 * {
-  font-family: "Franklin Gothic Medium", sans-serif;
+  font-family: "optima", sans-serif;
+  color: rgba(0, 0, 0, 0.735);
 }
