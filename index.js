@@ -1,4 +1,4 @@
-const brandsDiv = () => document.querySelector("#brands"); //diff betweeen . and # is . refers to a class and
+const brandsDiv = () => document.querySelector("#brands");
 let brandsInfo = [];
 
 const displayBrand = (brand) => {
@@ -6,14 +6,14 @@ const displayBrand = (brand) => {
   extraImagesDiv.id = `extra-${brand.name.replaceAll(" ", "-")}-images`;
   extraImagesDiv.className = "extra-images";
 
-  const div = document.createElement("div"); //creating a div (brand 1 for example) this also an example html tag..
-  div.id = brand.name.replaceAll(" ", "-").toLowerCase(); //we are setting an id attribute in this case with div.id (hence the id part) and giving it a value of the brand object's id so either brand-1, brand-2 brand-3 etc in this app
+  const div = document.createElement("div");
+  div.id = brand.name.replaceAll(" ", "-").toLowerCase();
   div.className = "brand-card-front";
 
-  const img = document.createElement("img"); //using javascript to create an html tag *the html tag HAS TO BE VALID u cant just use a conveient name*
+  const img = document.createElement("img");
   img.src = brand.main_image;
 
-  const h3 = document.createElement("h3"); //using javascript to create an html tag
+  const h3 = document.createElement("h3");
   const a = document.createElement("a");
   a.textContent = brand.name;
   a.href = `#${brand.name.replaceAll(" ", "-").toLowerCase()}`;
@@ -34,8 +34,8 @@ const displayBrand = (brand) => {
     img.classList.remove("animate");
     iconicHover.replaceWith(img);
   });
-  const h4 = document.createElement("h4"); //using javascript to create an html tag
-  h4.textContent = brand.founder; //
+  const h4 = document.createElement("h4");
+  h4.textContent = brand.founder;
   const likes = document.createElement("button");
   likes.innerHTML = '<i class="far fa-heart"></i>';
   likes.addEventListener("click", () => {
@@ -80,8 +80,8 @@ const handleClick = (event) => {
 };
 
 const fetchBrands = () => {
-  fetch("http://localhost:3000/brands") //grabs all data from db.json
-    .then((response) => response.json()) //gives you wayy TMI (gives me back an http response)
+  fetch("http://localhost:3000/brands")
+    .then((response) => response.json())
     .then((data) => {
       brandsInfo = data;
       data.forEach((brand) => {
@@ -96,4 +96,3 @@ const handlePageLoaded = () => {
 };
 
 document.addEventListener("DOMContentLoaded", handlePageLoaded);
-
